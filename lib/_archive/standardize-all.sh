@@ -1,4 +1,5 @@
 #!/bin/bash
+# Assumed to be run from the root of this project
 
 # Make build directory
 mkdir -p data/build;
