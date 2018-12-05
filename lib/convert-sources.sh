@@ -21,4 +21,13 @@ in2csv "$SOURCES/Minneapolis/New911Calls2017_Q4.csv" | csvformat -l > $BUILD/min
 in2csv "$SOURCES/St. Paul/2017 SPFD IncidentsWPriorityDispo_Unredacted.xlsx" | csvformat -l > $BUILD/st-paul--spfd--fire--2017-01.csv;
 in2csv "$SOURCES/St. Paul/2017 SPPD IncidentsWPriorityDispo.xlsx" | csvformat -l > $BUILD/st-paul--sppd--police--2017-01.csv;
 
+# Edina and Richfield are together
+in2csv "data/sources/Edina and Richfield/2018 Star Tribune CAD Request Edina PD FD and Richfield PD FD.xlsx" --sheet="EDINA POLICE" | csvformat -l > data/build/edina--epd--police--2017.csv;
+in2csv "data/sources/Edina and Richfield/2018 Star Tribune CAD Request Edina PD FD and Richfield PD FD.xlsx" --sheet="EDINA FIRE" | csvformat -l > data/build/edina--efd--fire--2017.csv;
+in2csv "data/sources/Edina and Richfield/2018 Star Tribune CAD Request Edina PD FD and Richfield PD FD.xlsx" --sheet="RICHFIELD POLICE" | csvformat -l > data/build/richfield--rpd--police--2017.csv;
+in2csv "data/sources/Edina and Richfield/2018 Star Tribune CAD Request Edina PD FD and Richfield PD FD.xlsx" --sheet="RICHFIELD FIRE" | csvformat -l > data/build/richfield--rfd--fire--2017.csv;
+
+# Hennepin
+# All dispatch together
+in2csv "data/sources/Hennepin/HennepinSherrif2017911.xlsx" | csvformat -l > data/build/hennepin--all--all--2017.csv;
 
