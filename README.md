@@ -24,6 +24,8 @@ Data processing analysis for dispatch data across the Twin Cities metro area.
    - `curl "https://www.gis.leg.mn/php/shptoGeojson.php?file=/geo/data/mcd/mcd2012" | node lib/geojson-to-postgis --table="mn_cities" --source-proj="EPSG:26915" --target-proj="EPSG:4326"`
 1. Get Minneapolis precincts from [Minneapolis open data](http://opendata.minneapolismn.gov/datasets/minneapolis-police-precincts):
    - `curl "https://opendata.arcgis.com/datasets/02ab4e12be434fee9d266531f563a6e8_0.zip" | shp2json | node lib/geojson-to-postgis --table="mpls_precincts"`
+1. Get Minneapolis neightborhoods from [Minneapolis open data](http://opendata.minneapolismn.gov/datasets/neighborhoods):
+   - `curl "https://opendata.arcgis.com/datasets/7f88316841ce471faa33c89035fb69e8_0.zip" | shp2json | node lib/geojson-to-postgis --table="mpls_neighborhoods"`
 
 ### Analysis
 
