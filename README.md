@@ -48,3 +48,7 @@ For race by census tract
 For median income by census tract
 
 1. Create CSV: `node lib/income-analysis.js > data/build/income-analysis.csv`
+
+For hour analysis
+
+1. Create JSON: `node lib/hour-analysis > data/build/hour-analysis.json`
