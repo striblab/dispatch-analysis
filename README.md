@@ -49,6 +49,10 @@ For median income by census tract
 
 1. Create CSV: `node lib/income-analysis.js > data/build/income-analysis.csv`
 
-For hour analysis
+For MPD hour analysis
 
 1. Create JSON: `node lib/hour-analysis > data/build/hour-analysis.json`
+
+For MPD neighborhood analysis
+
+1. Create JSON: `node lib/neighborhood-analysis > data/build/neighborhood-analysis.json`
